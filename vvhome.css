@@ -1,0 +1,681 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/******************NAVBAR CSS STYLE BY MOHAMED AHNAF***********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+nav{
+    background-color: white;
+    font-family: "Abel", sans-serif;
+    
+    
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+   
+    
+    
+    
+}
+
+.shopnow{
+    background-color: goldenrod;
+    border: none;
+    height: 30px;
+    font-size: 15px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 8px;
+margin-left: 10px;
+
+}
+
+nav a:hover{
+    color: goldenrod;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.vel-logo{
+    font-size:20px;
+    font-weight: bold;
+}
+
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin-bottom: 3px;
+
+}
+
+.menu{
+    display: none;
+    cursor:pointer;
+
+}
+
+.showmenu{
+    display: block;
+}
+
+/*MEDIA QUERY FOR WHOLE NAVBAR OF VELVET VOGUE BY MOHAMED AHNAF*/
+
+@media all and (max-width:1108px){
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        display: block;
+        padding: 10px 0;
+    }
+
+    ul{
+        text-align: center;
+        padding: 0px;
+        display: none;
+    }
+
+    .vel-logo{
+        align-self: flex-start;
+        margin:10px 0px 0px 30px;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+}
+
+/*CSS STYLE FOR PARTNERSHIP SECTION IN LAST OF VELVET VOGUE BY MOHAMED AHNAF*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dosis:wght@200..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.partnership{
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-top: 80px; 
+    align-items: center;
+    
+}
+
+.partnership h1{
+    background-color: rgba(218, 165, 32, 0.438);
+    
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    width: 100%;
+}
+
+.partnership img{
+    height: 300px;
+    
+    width: 750px;
+}
+
+
+
+
+@media (max-width: 1108px) {
+    .partnership {
+        height: auto; /* Let the height adjust dynamically */
+        margin-top: 40px; /* Adjust top margin */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .partnership h1 {
+        font-size: 22px; 
+        padding: 10px; 
+        background-color: rgba(218, 165, 32, 0.6); 
+    }
+
+    .partnership img {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 768px) {
+    .partnership {
+        padding: 5px; 
+    }
+
+    .partnership h1 {
+        font-size: 20px; 
+        width: 100%; 
+    }
+
+    .partnership img {
+        width: 100%; 
+        height: 250px; 
+    }
+}
+
+
+
+
+
+
+/******************************************************************************/
+
+/*************************************CSS STYLES FOR FOOTER AND CONTACT SECTION BY MOHAMED AHNAF*****************************************/
+footer{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  margin-top: 100px;
+    height: auto;
+    background-color: rgba(245, 222, 179, 0.253);
+    width: 100%;
+    
+}
+
+.owner{
+    margin-top: 50px;
+}
+
+.det{
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+.contact-details{
+   
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+    align-items: center;
+    cursor: pointer;
+    margin-left:50px;
+}
+
+.three{
+line-height: 2px;
+
+}
+
+
+@media (max-width: 1108px) {
+    footer {
+        margin-top: 40px; /* Reduce margin to avoid excess space */
+        padding: 10px; /* Add some padding for a cleaner look */
+    }
+
+    .contact-details {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+        margin-left: 0; /* Remove left margin */
+        gap: 30px; /* Reduce gap between the sections */
+    }
+
+    .det {
+        text-align: center; /* Center align text */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .det.one, .det.two {
+        font-size: 14px; /* Reduce font size for better readability */
+    }
+
+    .mail {
+        width: 100%; /* Make the mail input and button take up the full width */
+        text-align: center;
+    }
+
+    .owner {
+        margin-top: 30px; /* Adjust the space above the owner text */
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .atms i {
+        font-size: 40px; /* Adjust the size of payment icons */
+        margin-right: 10px; /* Add some spacing between icons */
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px; /* Add more padding for smaller devices */
+        text-align: center; /* Center align all content */
+    }
+
+    .contact-details {
+        flex-direction: column; /* Stack the content vertically */
+        gap: 20px; /* Reduce the gap */
+    }
+
+    .det {
+        text-align: center; /* Center align text */
+        margin-left: 0; /* Remove any unnecessary margins */
+    }
+
+    .mail input {
+        width: 100%; /* Ensure input fields are responsive */
+        margin-bottom: 10px; /* Add space below the input */
+    }
+
+    .mail button {
+        width: 100%; /* Make button full-width */
+        padding: 10px; /* Increase button padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .owner {
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .atms {
+        display: flex;
+        justify-content: center; /* Center the payment icons */
+        gap: 15px; /* Add some space between icons */
+    }
+
+    .atms i {
+        font-size: 35px; /* Slightly adjust the icon size for smaller screens */
+    }
+}
+
+
+
+
+
+/******************************************************************************/
+
+
+/*********************************OFFER SECTION SLIDER BY MOHAMED AHNAF*********************************************/
+
+.offers{
+    width: 100vw; 
+     height: 450px; 
+      margin-top:10px; 
+       margin-left: 0; 
+    position: relative;
+     user-select:none;
+     border-radius: 50px;
+     display: flex;
+     flex-direction: column;
+}
+
+.offers img{
+    width: 100%;
+    height: auto;
+}
+
+.slider-item, .hidden{
+    display: none;
+}
+
+.active{
+    display: block;
+    height: 50px;
+    animation: fadeanimation 1s;
+}
+
+@keyframes fadeanimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transition: opacity linear;
+    }
+}
+
+.slider-item.active { 
+    display: block; 
+}
+
+.slider-item img { 
+    max-height: 450px; 
+    width: 100%; 
+    height: auto; 
+    
+}
+
+.slider-btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: calc(100% - 40px); 
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    padding: 0 20px; 
+}
+
+.slider-btns button {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.397);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+
+.offers:hover .slider-btns{
+    visibility: visible;
+}
+
+
+.dots{
+    
+    width: 100%;
+    height:25px;
+   background-color: rgb(24, 18, 18);
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    cursor: pointer;
+
+
+
+    
+}
+
+.dot{
+    width: 20px;
+    height: 8px;
+    background-color: rgba(241, 241, 241, 0.096);
+    border-radius:100px;
+    
+}
+
+.dot-active{
+background-color: white;
+}
+
+
+
+
+
+@media (max-width: 1108px) {
+    .offers {
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+        border-radius: 20px; /* Reduce radius for smaller screens */
+        flex-direction: column;
+    }
+
+    .offers img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-btns {
+        visibility: visible; /* Keep buttons visible to assist smaller screens */
+        width: calc(100% - 20px);
+        padding: 0 10px;
+    }
+
+    .slider-btns button {
+        font-size: 20px; /* Smaller button size */
+        width: 25px;
+        height: 25px;
+        border-radius: 50%; /* Circular buttons for a cleaner look */
+    }
+
+    .dots {
+        height: 20px;
+        gap: 5px; /* Reduce spacing for dots */
+    }
+
+    .dot {
+        width: 15px;
+        height: 6px;
+    }
+
+    .slider-item img {
+        max-height: 300px; /* Adjust image height */
+    }
+
+    .active {
+        height: auto; /* Allow the active slider to adjust height dynamically */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************/
+
+
+
+
+/****************************SAMPLE PRODUCT SECTION TO JUST SHOWCASE BY MOHAMED AHNAF**************************************************/
+
+.samplebody{
+    
+    height: 400px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    background-color: antiquewhite;
+    
+    
+}
+
+.products{
+    height: 350px;
+    width: 250px;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(53, 53, 53);
+}
+
+.product-image{
+   
+    height: 250px;
+    width: 200px;
+
+}
+
+
+.product-image:hover{
+    opacity: 0.5;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dosis:wght@200..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.product-details{
+    
+    height: 100px;
+    width: 250px;
+    padding: 2px;
+    line-height: 0%;
+}
+
+.product-details h3{
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: goldenrod;
+    text-align: start;
+    margin-left: 25px;
+    letter-spacing: 0.5px;
+  
+}
+
+.product-details h4{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.596);
+    text-align: start;
+    margin-left: 25px;
+    
+}
+
+.product-details h5{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    text-align: start;
+    margin-left: 25px;
+}
+
+.product-details button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0px;
+   margin-left: 10px;
+   padding: 3px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+   cursor: pointer;
+}
+
+
+.sampleproduct-heading{
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Host Grotesk", sans-serif;
+   
+    font-size: larger;
+    
+
+
+    
+}
+
+.sampleproduct-heading h1{
+    margin-left: 20px;
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1108px) {
+    .samplebody {
+        height: auto; /* Allow the height to adjust dynamically */
+        flex-wrap: wrap; /* Enable wrapping for products */
+        justify-content: center; /* Center products on smaller screens */
+        overflow: hidden; /* Hide overflow on small screens */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .products {
+        width: 200px; /* Reduce the width of each product card */
+        height: auto; /* Let the height adjust dynamically */
+        margin: 10px; /* Add spacing between products */
+        padding: 10px;
+        background-color: rgb(43, 43, 43); /* Slightly darker for contrast */
+    }
+
+    .product-image {
+        width: 180px; /* Scale down images for smaller screens */
+        height: 200px; /* Maintain proportionate height */
+    }
+
+    .product-details {
+        width: 100%; /* Adjust width to fit the smaller card */
+        padding: 5px; /* Add padding for better spacing */
+    }
+
+    .product-details h3 {
+        font-size: 10px; /* Reduce font size */
+        margin-left: 10px; /* Adjust margin */
+    }
+
+    .product-details h4 {
+        font-size: 9px; /* Reduce font size */
+        margin-left: 10px;
+    }
+
+    .product-details h5 {
+        font-size: 10px; /* Keep font consistent */
+        margin-left: 10px;
+    }
+
+    .product-details button {
+        font-size: 9px; /* Reduce button font size */
+        margin-left: 5px; /* Adjust margin */
+        padding: 5px; /* Ensure proper button size */
+    }
+
+    .sampleproduct-heading {
+        font-size: medium; /* Scale down the heading font */
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    .sampleproduct-heading h1 {
+        font-size: 18px; /* Reduce the heading size */
+        margin-left: 10px; /* Adjust alignment */
+    }
+}
+
+
+/******************************************************************************/
+
+
+
+
+
+

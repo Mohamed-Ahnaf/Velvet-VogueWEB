@@ -1,0 +1,132 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: ;
+    
+}
+
+
+
+
+
+
+.loginform{
+    background-color:rgba(245, 222, 179, 0.267);
+    
+    border-radius: 20px;
+    padding: 10px;
+    height: 400px;
+    width: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  gap: 10px;
+    margin-top:40%;
+    justify-content: center;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.loginform h2{
+    font-family: "Nunito", sans-serif;
+font-size: 35px;
+text-align: justify;
+}
+
+.loginform h5{
+    font-family: "Nunito", sans-serif;
+font-size: 12px;
+text-align: justify;
+}
+
+
+
+.loginform button{
+
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin-top: 20px;
+  
+}
+
+/* Media Query for screens with max width of 1108px */
+@media screen and (max-width: 1108px) {
+  body {
+      padding: 0;
+      margin: 0;
+      font-family: "Nunito", sans-serif;
+  }
+
+  .loginform {
+      width: 90%; /* Adjusting the width of the form to fit the screen */
+      margin-top: 20%; /* Reduced margin to center the form better */
+      padding: 20px; /* Added padding for better appearance */
+      height: auto; /* Allowing the height to adjust based on content */
+  }
+
+  .loginform h2 {
+      font-size: 28px; /* Adjusting font size for better readability */
+      text-align: center;
+  }
+
+  .loginform h5 {
+      font-size: 14px;
+      text-align: center;
+  }
+
+  .loginform input {
+      width: 100%; /* Making input fields take up full width of the container */
+      padding: 12px; /* Increasing padding for comfort */
+      font-size: 16px; /* Increasing font size for readability */
+      border-radius: 30px;
+      margin-bottom: 15px;
+  }
+
+  .loginform button {
+      width: 100%; /* Making the login button take full width */
+      padding: 12px;
+      font-size: 18px; /* Adjusting font size */
+      margin-top: 10px;
+  }
+
+  .loginform label {
+      font-size: 16px; /* Adjust label size for better visibility */
+  }
+
+  .loginform .fa-user, .loginform .fa-lock {
+      margin-right: 10px; /* Space between icon and input */
+  }
+
+  .menu-line {
+      width: 20px; /* Reducing size of menu lines */
+      height: 3px;
+  }
+
+  .menu {
+      margin-top: 10px; /* Adjusting spacing for mobile-friendly view */
+  }
+}
+
